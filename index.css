@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+}
+
+#userSide{
+    text-align: center;
+    height: 100%;
+
+}
+
+.choices img {
+    width: 300px;
+    cursor: pointer;
+    margin: 50px; /* Adds space around each image */
+}
+
+
+.choices img:hover{
+    width: 260px;
+}
+
+
+#first{
+    display: none;
+}
+
+#second{
+    display: none;
+}
+
+#third {
+    display: flex;               /* Use flexbox for layout */
+    align-items: center;         /* Center the items vertically */
+    justify-content: center;     /* Center the items horizontally */
+    height: 100vh;              /* Set the height to full viewport height */
+}
+
+#userPlay, #computerAction {
+    margin: 0 15px;             /* Add horizontal spacing between the elements */
+    text-align: center;         /* Center text within the elements */
+}
+
+#middle {
+    width: 20%;
+    padding: 10px;              /* Add some padding for better appearance */
+    text-align: center;         /* Center the text in the middle section */
+    margin: 0 0px;             /* Optional: Add some margin for spacing */
+}
+
+
