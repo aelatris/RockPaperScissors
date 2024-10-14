@@ -1,34 +1,37 @@
-body{
+body {
     background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-h1{
+h1 {
     color: white;
 }
 
-#userSide{
+#userSide {
     text-align: center;
     height: 100%;
-
+    padding: 10px;
 }
 
 .choices img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     cursor: pointer;
-    margin: 50px; 
+    margin: 20px auto;
 }
 
-
-.choices img:hover{
-    width: 260px;
+.choices img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-
-#first{
+#first {
     display: block;
 }
 
-#second{
+#second, #third {
     display: none;
 }
 
@@ -36,33 +39,101 @@ h1{
     display: none;               
     align-items: center;         
     justify-content: center;    
-    height: 100vh;           
+    height: 100vh;  
 }
 
 #userPlay, #computerAction {
-    margin: 0 15px;          
-    text-align: center;        
+    margin: 0 5%;
+    text-align: center;
 }
 
 #middle {
-   text-align: center;
+    text-align: center;
 }
 
-button{
-    width: 30%;
-    height: 5vh;
+button {
+    width: 80%;
+    height: 50px;
     font-size: larger;
     border-radius: 15px;
     margin-top: 20px;
     background-color: blue;
     color: white;
+    transition: all 0.3s ease-in-out; 
 }
 
-button:hover{
-    width: 35%;
-    height: 6vh;
+button:hover {
+    width: 85%;
+    height: 60px;
     cursor: pointer;
     color: black;
     background-color: rgb(255, 119, 0);
+}
+
+@media (max-width: 1000px) {
+
+    .choices img {
+        max-width: 150px;
+    }
+
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: large;
+    }
+
+    button:hover {
+        width: 100%;
+        height: 40px;
+    }
+
+    #third {
+        font-size: x-small;
+        
+    }
+    #third img{
+        width: 95%;        
+    }
+
+    #second{
+        text-align: center;
+        margin-top: 25%;
+        width: 50%;
+    }
+}
+
+
+
+@media (max-width: 680px) {
+
+    .choices img {
+        max-width: 100px;
+    }
+
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: large;
+    }
+
+    button:hover {
+        width: 100%;
+        height: 40px;
+    }
+
+    #third {
+        font-size: x-small;
+        
+    }
+    #third img{
+        width: 100%;        
+    }
+
+    #second{
+        text-align: center;
+        margin-top: 85%;
+        width: 70%;
+    }
+
 }
 
