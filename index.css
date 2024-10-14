@@ -45,11 +45,7 @@ h1{
 }
 
 #middle {
-    width: 30%;
-    padding: 10px;              
-    text-align: center;        
-    margin: 0 0px;            
-    min-width: 35%;
+   text-align: center;
 }
 
 button{
